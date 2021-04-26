@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+    <div class="col-4">
+        <img src="phone-ringing.gif" height="60px;" style="float:right;">
+    </div>
+    <div class="col-8">
+        <span style="font-size: 40px; color:rgb(122, 51, 122);"> Verify Phone Numbers</span>
+       
+    </div>
+    </div>
+    <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card h-100" style="padding:20px;box-shadow:0.5rem 0.5rem rgb(216, 148, 216) ;">
+                    <div class="card-title" style="font-size: 30px;">
+                        Phone Details
+                    </div>
+                    <div class="card-body">
+                        <label for="number" style="font-size: 20px;"> Enter Phone Number</label>
+                        <small class="form-text text-muted">Please enter '{country_code}{phone_number} eg. 918123456789 <br>
+                        If country code is not given by default your country code will be added
+                        </small>
+                        <br>
+                        
+        
+                        <input type="text" id="number" name="number" class="form-control" style="width:50%;">
+                        
+                        <br>
+                        <button type="button" onclick="call()" class="btn" style="background-color:rgb(167, 47, 167);color:cornsilk;">
+                        Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="status">
+
+            </div>
+        </div>
+    </div>
+
+    <script src ="Phone.js"></script>
+</body>
+</html>
